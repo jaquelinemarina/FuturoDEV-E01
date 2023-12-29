@@ -1,0 +1,101 @@
+<!-- Objetivo: construir o básico de um portfólio pessoal.
+    
+Ex 1 - Estrutura HTML básica
+Crie um arquivo HTML básico que represente a estrutura de uma página pessoal. Adicione pelo menos as seguintes tags:
+<html>
+<head>
+<title>
+<body>
+<header>
+<section>
+<article>
+<footer>
+
+Ex 2 - Estilização com CSS
+Aplique estilos básicos à página usando CSS. Experimente:
+- Definir uma cor de fundo para o corpo da página
+- Estilizar o cabeçalho e o rodapé
+- Configurar fontes e tamanhos de texto
+
+Ex 3 - Adicionando Conteúdo
+Dentro da seção principal (<section>), adicione alguns artigos representando projetos fictícios (ou não). Cada artigo deve conter:
+- Um título (<h2>)
+- Uma breve descrição do projeto
+- Uma imagem relacionada ao projeto
+
+Ex 4 -  Interatividade com JavaScript
+Utilize JavaScript para tornar a página interativa. Adicione event listeners aos elementos, de modo que:
+- Ao clicar em um artigo, uma mensagem de alerta exibindo o título do projeto seja mostrada
+- Ao passar o mouse sobre o cabeçalho, a cor de fundo mude -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gamja+Flower&family=Outfit:wght@300&display=swap" rel="stylesheet">
+<title>Portfólio</title>
+</head>
+<body>
+    <nav id="cor1">
+        <p>HOME</p>
+        <p>SOBRE</p>
+        <p>SERVIÇOS</p>
+        <p>CONTATO</a>
+    </nav>
+
+        <h1>Meus Projetos</h1>
+        <h4>Por aqui você encontra os projetos que desenvolvi na formação FuturoDev [Eco] do FMT/2023.</h4>
+
+    <section class="artigos">
+
+    <div>
+        <article id="a1">
+            <header>
+                <h2 id="t1">Calculadora da Jaque</h2>
+                <span>Calculadora com validação que possibilita realizar cálculos matemáticos de diferentes tipos.</span>
+            </header>
+            <a href="https://github.com/jaquelinemarina/FuturoDEV-S2A2">
+            <img src="https://regrasparatcc.com.br/wp-content/uploads/2021/05/temas-para-tcc-de-matematica-1.png"
+                 alt="Imagem contendo uma calculadora, um compasso e réguas. Ao fundo símbolos matemáticos."/>
+            </a>
+        </article>
+    </div>
+
+    <div>
+        <article id="a2">
+            <header>
+                <h2 id="t2">Cadastro de carros</h2>
+                <span>Processo sequencial para cadastrar carros em um sistema de gerenciamento de veículos.</span>
+            </header>
+            <a href="https://github.com/jaquelinemarina/FuturoDEV-S1A2">
+            <img src="https://img.freepik.com/vetores-premium/colecao-de-carros-de-desenhos-animados-vetoriais-para-projetos-infantis-veiculos-simples-isolados-em-cores-pastel_505988-651.jpg?w=1380"
+                 alt="Imagem contendo seis carros coloridos."/>
+            </a>
+        </article>
+    </div>
+
+    <div>
+        <article id="a3">
+            <header>
+                <h2 id="t3">Qual é o maior número?</h2>
+                <span>Função capaz de receber dois números inteiros e verificar qual é o maior.</span>
+            </header>
+            <a href="https://github.com/jaquelinemarina/FuturoDEV-S2A1">
+            <img src="https://img.freepik.com/vetores-gratis/numeros-0-9-mao-desenhada-doodle-estilo-tipografia-definir-vetor_53876-118073.jpg?w=740&t=st=1703354167~exp=1703354767~hmac=0283ad7369c7c606791a9c6d3d8ef9172f5d01703f760d714ff9e7beaa90f71f"
+                 alt="Imagem contendo números coloridos de zero a nove."/>
+            </a>
+        </article>
+    </div>
+
+    </section>
+
+    <footer id="cor2">
+        <h5>Desenvolvido por Jaqueline Marina - Copyright &copy; 2023</h5>
+    </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
